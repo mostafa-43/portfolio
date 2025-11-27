@@ -1,0 +1,170 @@
+/*
+  styles.css
+  Extracted styles from original index.html.
+  Short comments describe sections and purpose.
+*/
+
+/* Base font + transitions */
+* {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #F5F7FA;
+    --bg-card: #ffffff;
+    --text-primary: #0A1930;
+    --text-secondary: #4B5563;
+    --text-tertiary: #6B7280;
+    --border-color: #E5E7EB;
+    --accent-color: #0066FF;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme variable overrides */
+.dark-mode {
+    --bg-primary: #0A1930;
+    --bg-secondary: #0f1f3a;
+    --bg-card: #162d4a;
+    --text-primary: #F9FAFB;
+    --text-secondary: #D1D5DB;
+    --text-tertiary: #9CA3AF;
+    --border-color: #1F2937;
+    --accent-color: #3B82F6;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+/* Page base colors */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.bg-primary {
+    background-color: var(--bg-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary) !important;
+}
+
+.bg-card {
+    background-color: var(--bg-card) !important;
+}
+
+.text-primary {
+    color: var(--text-primary) !important;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.text-tertiary {
+    color: var(--text-tertiary) !important;
+}
+
+.border-custom {
+    border-color: var(--border-color) !important;
+}
+
+/* Shadows mapped to variables for consistency */
+.shadow-custom-sm {
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.shadow-custom-md {
+    box-shadow: var(--shadow-md) !important;
+}
+
+.shadow-custom-lg {
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.shadow-custom-xl {
+    box-shadow: var(--shadow-xl) !important;
+}
+
+/* Small typing cursor animation used in hero */
+.typing-animation {
+    border-right: 2px solid var(--accent-color);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--accent-color);
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Theme toggle icon transitions */
+.theme-toggle-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-toggle-btn i {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.theme-toggle-btn .fa-moon {
+    position: absolute;
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+.theme-toggle-btn .fa-sun {
+    position: absolute;
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+.dark-mode .theme-toggle-btn .fa-moon {
+    transform: rotate(-180deg);
+    opacity: 0;
+}
+
+.dark-mode .theme-toggle-btn .fa-sun {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+/* Form inputs styling */
+input,
+textarea {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent-color) !important;
+}
+
+/* Hero gradient (light + dark variants) */
+.gradient-hero {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.dark-mode .gradient-hero {
+    background: linear-gradient(135deg, #0f1f3a 0%, #0A1930 100%);
+}
