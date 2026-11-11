@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
     <!-- Styles moved to external file -->
@@ -164,66 +165,122 @@
     <!-- Work Experience Section -->
     <section id="experience" class="py-20 bg-secondary">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-12" data-aos="fade-up">Work Experience
+    
+            <h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-12" data-aos="fade-up">
+                Work Experience
             </h2>
-
+    
             <div class="max-w-4xl mx-auto">
                 <div class="relative border-l-4 border-[#0066FF] pl-8">
-                    <!-- Experience Item 1 -->
+    
+                    <!-- Experience Item 1: Imkan -->
                     <div class="mb-12 relative" data-aos="fade-left">
-                        <div class="absolute -left-4 top-0 w-8 h-8 bg-[#0066FF] rounded-full border-4 border-card">
+                        <div class="absolute -left-4 top-0 w-8 h-8 bg-[#0066FF] rounded-full border-4 border-card"></div>
+    
+                        <div class="bg-card rounded-2xl shadow-custom-lg p-6 hover:shadow-custom-xl transition-shadow">
+                            <div class="flex justify-between items-start mb-3 flex-wrap gap-2">
+                                <h3 class="text-xl font-bold text-primary">Full Stack Web Developer</h3>
+                                <span class="text-sm text-[#0066FF] font-semibold">2026</span>
+                            </div>
+    
+                            <p class="text-secondary mb-3 font-semibold">
+                                Imkan Group – CRM System Development
+                            </p>
+    
+                            <p class="text-secondary leading-relaxed">
+                                Worked on developing and enhancing a CRM system to manage business operations and customer
+                                relationships.
+                                Contributed to frontend and backend development, implementing features for Leads, Contacts,
+                                Accounts, Deals, and Activities.
+                                <br><br>
+                                <span class="font-semibold text-primary">Technologies:</span>
+                                React.js, Node.js, MySQL, JavaScript, REST APIs
+                            </p>
                         </div>
-
+                    </div>
+    
+                    <!-- Experience Item 2: PASCO -->
+                    <div class="mb-12 relative" data-aos="fade-left" data-aos-delay="100">
+                        <div class="absolute -left-4 top-0 w-8 h-8 bg-[#0066FF] rounded-full border-4 border-card"></div>
+    
+                        <div class="bg-card rounded-2xl shadow-custom-lg p-6 hover:shadow-custom-xl transition-shadow">
+                            <div class="flex justify-between items-start mb-3 flex-wrap gap-2">
+                                <h3 class="text-xl font-bold text-primary">Software Developer</h3>
+                                <span class="text-sm text-[#0066FF] font-semibold">2026</span>
+                            </div>
+    
+                            <p class="text-secondary mb-3 font-semibold">
+                                PASCO – Al Ahmadia Scales | ERP System
+                            </p>
+    
+                            <p class="text-secondary leading-relaxed">
+                                Developed and maintained a customized desktop ERP system for managing the company's
+                                business operations. Implemented modules for sales, purchases, invoices, inventory,
+                                and financial accounts.
+                                Integrated barcode printing and weighing scale devices, while improving system
+                                functionality and user experience.
+                                <br><br>
+                                <span class="font-semibold text-primary">Technologies:</span>
+                                C#, .NET Framework, Windows Forms, SQL Server, Entity Framework
+                            </p>
+                        </div>
+                    </div>
+    
+                    <!-- Experience Item 3 -->
+                    <div class="mb-12 relative" data-aos="fade-left" data-aos-delay="200">
+                        <div class="absolute -left-4 top-0 w-8 h-8 bg-[#0066FF] rounded-full border-4 border-card"></div>
+    
                         <div class="bg-card rounded-2xl shadow-custom-lg p-6 hover:shadow-custom-xl transition-shadow">
                             <div class="flex justify-between items-start mb-3 flex-wrap gap-2">
                                 <h3 class="text-xl font-bold text-primary">Freelance .NET Desktop Developer</h3>
                                 <span class="text-sm text-[#0066FF] font-semibold">2025</span>
                             </div>
-
-                            <p class="text-secondary mb-3 font-semibold">Sales Management Desktop Application</p>
-
+    
+                            <p class="text-secondary mb-3 font-semibold">
+                                Sales Management Desktop Application
+                            </p>
+    
                             <p class="text-secondary leading-relaxed">
                                 Built a complete sales and inventory management desktop system that handles product
-                                stock,
-                                processes sales transactions, records purchase operations, and generates automated
-                                invoices and
-                                financial reports.
+                                stock, processes sales transactions, records purchase operations, and generates automated
+                                invoices and financial reports.
                                 <br><br>
-                                <span class="font-semibold text-primary">Technologies:</span> C#, .NET Desktop, Entity
-                                Framework Core, SQL Server
+                                <span class="font-semibold text-primary">Technologies:</span>
+                                C#, .NET Desktop, Entity Framework Core, SQL Server
                             </p>
                         </div>
                     </div>
-
-                    <!-- Experience Item 2 -->
-                    <div class="mb-12 relative" data-aos="fade-left" data-aos-delay="100">
-                        <div class="absolute -left-4 top-0 w-8 h-8 bg-[#0066FF] rounded-full border-4 border-card">
-                        </div>
-
+    
+                    <!-- Experience Item 4 -->
+                    <div class="mb-12 relative" data-aos="fade-left" data-aos-delay="300">
+                        <div class="absolute -left-4 top-0 w-8 h-8 bg-[#0066FF] rounded-full border-4 border-card"></div>
+    
                         <div class="bg-card rounded-2xl shadow-custom-lg p-6 hover:shadow-custom-xl transition-shadow">
                             <div class="flex justify-between items-start mb-3 flex-wrap gap-2">
                                 <h3 class="text-xl font-bold text-primary">Freelance Web Developer</h3>
                                 <span class="text-sm text-[#0066FF] font-semibold">2025</span>
                             </div>
-
-                            <p class="text-secondary mb-3 font-semibold">Web Applications Development & Deployment</p>
-
+    
+                            <p class="text-secondary mb-3 font-semibold">
+                                Web Applications Development & Deployment
+                            </p>
+    
                             <p class="text-secondary leading-relaxed">
                                 Developed and deployed multiple responsive web applications with real client
-                                requirements.
-                                Implemented features including secure user authentication, real-time data management,
-                                and modern UI/UX design.
+                                requirements. Implemented features including secure user authentication,
+                                real-time data management, and modern UI/UX design.
                                 <br><br>
-                                <span class="font-semibold text-primary">Technologies:</span> HTML, CSS, JavaScript,
-                                TypeScript, Bootstrap, Firebase, Angular
+                                <span class="font-semibold text-primary">Technologies:</span>
+                                HTML, CSS, JavaScript, TypeScript, Bootstrap, Firebase, Angular
                             </p>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Internship Section -->
     <section id="internship" class="py-20 bg-primary">
@@ -870,6 +927,76 @@
                         </div>
                     </div>
                 </div>
+
+
+<!-- Project 2 -->
+<div class="bg-card rounded-3xl shadow-custom-lg overflow-hidden hover:shadow-custom-xl transition-all hover:-translate-y-2"
+    data-aos="fade-up">
+    <div class="relative h-64 bg-black overflow-hidden flex items-center justify-center">
+        <img src="assets/emirates.jpg" alt="Easy Shopping System" class="w-full h-full object-contain">
+    </div>
+
+    <div class="p-6">
+        <h3 class="text-xl font-bold text-primary mb-3">Emirates Lubricants</h3>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">Html</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">CSS</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">JavaScript</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">Bootstrap</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">Firebase</span>
+        </div>
+
+        <div class="flex gap-3">
+            <a href="https://emirates-lubricants.vercel.app/"
+                class="flex-1 px-4 py-2 bg-[#0066FF] text-white rounded-full text-center font-semibold hover:bg-[#0052cc] transition-all text-sm">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                Live Demo
+            </a>
+            <a href="https://github.com/mostafa-43/emirates_lubricants"
+                class="flex-1 px-4 py-2 bg-[#0A1930] text-white rounded-full text-center font-semibold hover:bg-[#162d4a] transition-all text-sm">
+                <i class="fab fa-github mr-2"></i>
+                GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+                
+<!-- Project 2 -->
+<div class="bg-card rounded-3xl shadow-custom-lg overflow-hidden hover:shadow-custom-xl transition-all hover:-translate-y-2"
+    data-aos="fade-up">
+    <div class="relative h-64 bg-black overflow-hidden flex items-center justify-center">
+        <img src="assets/finite.jpg" alt="Easy Shopping System" class="w-full h-full object-contain">
+    </div>
+
+    <div class="p-6">
+        <h3 class="text-xl font-bold text-primary mb-3">Finite-For-All</h3>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">Html</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">CSS</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">JavaScript</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">Bootstrap</span>
+            <span class="px-3 py-1 bg-secondary rounded-full text-xs text-[#0066FF] font-semibold">Firebase</span>
+        </div>
+
+        <div class="flex gap-3">
+            <a href="https://mostafa-43.github.io/finlit-for-all/"
+                class="flex-1 px-4 py-2 bg-[#0066FF] text-white rounded-full text-center font-semibold hover:bg-[#0052cc] transition-all text-sm">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                Live Demo
+            </a>
+            <a href="https://github.com/mostafa-43/finlit-for-all"
+                class="flex-1 px-4 py-2 bg-[#0A1930] text-white rounded-full text-center font-semibold hover:bg-[#162d4a] transition-all text-sm">
+                <i class="fab fa-github mr-2"></i>
+                GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+
                 <!-- Project 3 -->
                 <div class="bg-card rounded-3xl shadow-custom-lg overflow-hidden hover:shadow-custom-xl transition-all hover:-translate-y-2"
                     data-aos="fade-up">
@@ -1068,6 +1195,23 @@
                     </div>
                 </a>
                 
+                <!-- Certificate 9 -->
+                <a href="assets/WhatsApp Image 2026-01-04 at 9.37.05 PM.jpeg" data-lightbox="certificates">
+                    <div class="bg-card rounded-3xl shadow-custom-lg overflow-hidden hover:shadow-custom-xl transition-all"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative h-64 bg-gradient-to-br from-[#0066FF] to-[#0A1930] flex items-center justify-center">
+                            <img src="assets/WhatsApp Image 2026-01-04 at 9.37.05 PM.jpeg" alt="Certificate"
+                                class="w-full h-full object-cover opacity-20 cursor-pointer">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas fa-certificate text-white text-6xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-primary">ITI Certificate</h3>
+                        </div>
+                    </div>
+                </a>
+
                 <!-- Certificate 9 -->
                 <a href="assets/9database.PNG" data-lightbox="certificates">
                     <div class="bg-card rounded-3xl shadow-custom-lg overflow-hidden hover:shadow-custom-xl transition-all"
